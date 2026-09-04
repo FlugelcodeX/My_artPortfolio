@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Works — FLUGEL</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700;800;900&family=Permanent+Marker&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body data-page="works">
+    <header class="navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-box">F</span>
+        <span>FLUGEL</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html">HOME</a>
+        <a class="active" href="works.html">WORKS</a>
+        <a href="digital-art.html">DIGITAL ART</a>
+        <a href="graphic-design.html">DESIGN</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+
+      <button class="menu-toggle">☰</button>
+    </header>
+
+    <main class="inner-page">
+      <section class="page-hero">
+        <div>
+          <span class="eyebrow"> CHAPTER 005 </span>
+
+          <h1>
+            THE
+            <br />
+            <em>ARCHIVE.</em>
+          </h1>
+
+          <p>Every drawing, design and experiment gets its own panel.</p>
+        </div>
+
+        <div class="page-sfx">BAM!</div>
+      </section>
+
+      <!-- FILTER -->
+
+      <div class="work-filters">
+        <button class="filter active" data-filter="all">ALL</button>
+
+        <button class="filter" data-filter="digital">DIGITAL ART</button>
+
+        <button class="filter" data-filter="design">GRAPHIC DESIGN</button>
+
+        <button class="filter" data-filter="illustration">ILLUSTRATION</button>
+      </div>
+
+      <!-- GALLERY -->
+
+      <section class="archive-grid">
+        <article class="archive-card" data-category="digital">
+          <div class="archive-image">
+            <img src="full.png" alt="Artwork" />
+
+            <div class="view-art">VIEW →</div>
+          </div>
+
+          <div class="archive-meta">
+            <span>01 / DIGITAL ART</span>
+            <h2>SHRINE MAIDEN</h2>
+          </div>
+        </article>
+
+        <article class="archive-card" data-category="illustration">
+          <div class="archive-image">
+            <img src="art02.png" alt="Artwork" />
+
+            <div class="view-art">VIEW →</div>
+          </div>
+
+          <div class="archive-meta">
+            <span>02 / ILLUSTRATION</span>
+            <h2>CHARACTER STUDY</h2>
+          </div>
+        </article>
+
+        <article class="archive-card" data-category="design">
+          <div class="archive-image">
+            <img src="design01.png" alt="Design" />
+
+            <div class="view-art">VIEW →</div>
+          </div>
+
+          <div class="archive-meta">
+            <span>03 / GRAPHIC DESIGN</span>
+            <h2>VISUAL IDENTITY</h2>
+          </div>
+        </article>
+
+        <article class="archive-card" data-category="digital">
+          <div class="archive-image">
+            <img src="art03.png" alt="Artwork" />
+
+            <div class="view-art">VIEW →</div>
+          </div>
+
+          <div class="archive-meta">
+            <span>04 / DIGITAL ART</span>
+            <h2>AFTER DARK</h2>
+          </div>
+        </article>
+
+        <article class="archive-card" data-category="design">
+          <div class="archive-image">
+            <img src="design02.png" alt="Design" />
+
+            <div class="view-art">VIEW →</div>
+          </div>
+
+          <div class="archive-meta">
+            <span>05 / GRAPHIC DESIGN</span>
+            <h2>MANGA POSTER</h2>
+          </div>
+        </article>
+
+        <article class="archive-card" data-category="illustration">
+          <div class="archive-image">
+            <img src="art04.png" alt="Illustration" />
+
+            <div class="view-art">VIEW →</div>
+          </div>
+
+          <div class="archive-meta">
+            <span>06 / ILLUSTRATION</span>
+            <h2>ORIGINAL CHARACTER</h2>
+          </div>
+        </article>
+
+        <article class="archive-card" data-category="digital">
+          <div class="archive-image">
+            <img src="art05.png" alt="Digital art" />
+
+            <div class="view-art">VIEW →</div>
+          </div>
+
+          <div class="archive-meta">
+            <span>07 / DIGITAL ART</span>
+            <h2>DIGITAL PAINTING</h2>
+          </div>
+        </article>
+
+        <article class="archive-card" data-category="design">
+          <div class="archive-image">
+            <img src="design03.png" alt="Graphic design" />
+
+            <div class="view-art">VIEW →</div>
+          </div>
+
+          <div class="archive-meta">
+            <span>08 / GRAPHIC DESIGN</span>
+            <h2>SOCIAL CAMPAIGN</h2>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand">FLUGEL<span>©</span></div>
+
+      <p>DIGITAL ARTIST • GRAPHIC DESIGNER • CREATOR</p>
+
+      <div class="footer-social">
+        <a href="#">FB</a>
+        <a href="#">IG</a>
+        <a href="#">GH</a>
+      </div>
+    </footer>
+
+    <!-- LIGHTBOX -->
+
+    <div class="lightbox">
+      <button class="lightbox-close">×</button>
+
+      <img src="" alt="Artwork preview" />
+
+      <div class="lightbox-title"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
