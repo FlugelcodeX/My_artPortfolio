@@ -1,5 +1,5 @@
 /* =========================================================
-   FLUGEL MANGA PORTFOLIO
+   FRANCIS MANGA PORTFOLIO
    JavaScript controls:
    • Mobile navigation
    • Scroll reveal (with stagger)
