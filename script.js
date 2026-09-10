@@ -416,3 +416,52 @@ document.querySelectorAll("img").forEach((image) => {
     image.style.objectFit = "contain";
   });
 });
+/* =========================================================
+   IMAGE LIGHTBOX
+   Click image = open
+   Click outside image = close
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".clickable-image");
+
+  // Create the lightbox
+  const lightbox = document.createElement("div");
+  lightbox.className = "image-lightbox";
+
+  // Create the enlarged image
+  const lightboxImage = document.createElement("img");
+
+  lightbox.appendChild(lightboxImage);
+  document.body.appendChild(lightbox);
+
+  // Open image
+  images.forEach((image) => {
+    image.addEventListener("click", () => {
+      lightboxImage.src = image.src;
+      lightboxImage.alt = image.alt;
+
+      lightbox.classList.add("active");
+
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  // Close when clicking outside the image
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+      lightbox.classList.remove("active");
+
+      document.body.style.overflow = "";
+    }
+  });
+
+  // Also allow ESC to close
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      lightbox.classList.remove("active");
+
+      document.body.style.overflow = "";
+    }
+  });
+});

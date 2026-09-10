@@ -3275,3 +3275,68 @@ body {
     animation: none;
   }
 }
+/* =========================================================
+   IMAGE LIGHTBOX
+   Click an artwork to view it larger.
+   Click outside the artwork to close it.
+   ========================================================= */
+
+.clickable-image {
+  cursor: zoom-in;
+}
+
+/* Dark fullscreen background */
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+
+  background: rgba(0, 0, 0, 0.88);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+
+  cursor: zoom-out;
+}
+
+/* When opened */
+.image-lightbox.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Large artwork */
+.image-lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  border-radius: 4px;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+
+  cursor: default;
+
+  transform: scale(0.95);
+
+  transition: transform 0.2s ease;
+}
+
+/* Small zoom animation */
+.image-lightbox.active img {
+  transform: scale(1);
+}
